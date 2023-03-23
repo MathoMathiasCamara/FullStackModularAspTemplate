@@ -10,6 +10,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Asp.Api\Asp.Api.csproj" />
     <ProjectReference Include="..\Asp.Web\Asp.Web.csproj" />
   </ItemGroup>
 
