@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.Web", "Asp.Web\Asp.Web.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp", "Asp\Asp.csproj", "{31FF3C66-7617-431C-8694-3348921E429E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.Api", "Asp.Api\Asp.Api.csproj", "{472DCBC2-09EE-4D3E-B708-062ED4E0078D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{31FF3C66-7617-431C-8694-3348921E429E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{31FF3C66-7617-431C-8694-3348921E429E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{31FF3C66-7617-431C-8694-3348921E429E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{472DCBC2-09EE-4D3E-B708-062ED4E0078D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{472DCBC2-09EE-4D3E-B708-062ED4E0078D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{472DCBC2-09EE-4D3E-B708-062ED4E0078D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{472DCBC2-09EE-4D3E-B708-062ED4E0078D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
