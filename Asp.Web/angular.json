@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "Asp.Web": {
+    "Asp": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -69,10 +69,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "Asp.Web:build:production"
+              "browserTarget": "Asp:build:production"
             },
             "development": {
-              "browserTarget": "Asp.Web:build:development"
+              "browserTarget": "Asp:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +80,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "Asp.Web:build"
+            "browserTarget": "Asp:build"
           }
         },
         "test": {

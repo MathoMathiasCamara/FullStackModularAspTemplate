@@ -8,7 +8,11 @@
 	</PropertyGroup>
 
 	<ItemGroup>
+		<Compile Remove="Pages\**" />
+		<Content Remove="Pages\**" />
 		<Content Remove="tsconfig*.json" />
+		<EmbeddedResource Remove="Pages\**" />
+		<None Remove="Pages\**" />
 		<Content Remove="package.json" />
 		<Content Remove="package-lock.json" />
 		<Content Remove="angular.json" />

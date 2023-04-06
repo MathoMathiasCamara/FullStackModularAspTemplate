@@ -1,10 +1,13 @@
+using Asp.Api;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.FileProviders;
 using Microsoft.Extensions.Hosting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -23,30 +26,19 @@ namespace Asp
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddApi();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-            if (env.IsDevelopment())
-            {
-                app.UseDeveloperExceptionPage();
-            }
-            else
-            {
-                app.UseExceptionHandler("/Error");
-            }
+            // add the configuration of my api
+            app.ApiConfigure(env);
 
-            app.UseStaticFiles();
-
-            app.UseRouting();
-
-            app.UseAuthorization();
-
-            app.UseEndpoints(endpoints =>
-            {
-                endpoints.MapRazorPages();
-            });
+            //force the asp.net to use the default file system index.html,index.php etc...
+            app.UseDefaultFiles();
+       
+            app.UseAuthorization();          
         }
     }
 }
