@@ -4,6 +4,7 @@ using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Threading.Tasks;
 
@@ -20,6 +21,13 @@ namespace Asp
             Host.CreateDefaultBuilder(args)
                 .ConfigureWebHostDefaults(webBuilder =>
                 {
+                    //webBuilder.UseStaticWebAssets();
+                    var angularWebDirectory = Directory.GetParent(Directory.GetCurrentDirectory()).FullName + "\\Asp.Web";
+                    if (Directory.Exists(angularWebDirectory))
+                    {
+                        webBuilder.UseContentRoot(angularWebDirectory);
+                        webBuilder.UseWebRoot(angularWebDirectory + "\\wwwroot");
+                    }
                     webBuilder.UseStartup<Startup>();
                 });
     }
