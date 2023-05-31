@@ -1,0 +1,19 @@
+@page "{*_}"
+@{
+
+    ViewData["Title"] = "Angular";
+    ViewData["BaseRef"] = "Angular";
+    Layout = "_Layout";
+}
+
+@section Styles {
+    <link rel="stylesheet" href="~/_content/Asp.Angular/styles.css">
+}
+
+@section Scripts
+    {
+    <script src="~/_content/Asp.Angular/runtime.js" type="module"></script>
+    <script src="~/_content/Asp.Angular/polyfills.js" type="module"></script>
+    <script src="~/_content/Asp.Angular/main.js" type="module"></script>
+}
+<app-root></app-root>
