@@ -1,5 +1,8 @@
 html {
-  font-size: 14px;
+    font-size: 14px !important;
+    font-family: Inter,system-ui,Avenir,Helvetica,Arial,sans-serif !important;
+    line-height: 1.5 !important;
+    font-weight: 400 !important;
 }
 
 @media (min-width: 768px) {
@@ -13,6 +16,7 @@ html {
   min-height: 100%;
 }
 
-body {
-  margin-bottom: 60px;
+.navbar {
+    height: 60px !important;
+    z-index: 1;
 }

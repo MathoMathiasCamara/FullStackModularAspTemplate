@@ -8,14 +8,13 @@
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/StartProject.Asp.styles.css" asp-append-version="true" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <base href="@ViewData["BaseRef"]" />
     @await RenderSectionAsync("Styles", required: false)
 </head>
-<body class="mat-typography">
+<body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow">
+        <nav class="navbar navbar-expand-lg navbar-toggleable-lg navbar-light bg-white border-bottom box-shadow">
             <div class="container-fluid">
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <div>
@@ -30,17 +29,10 @@
             </div>
         </nav>
     </header>
-    <div class="container-fluid">
-        <main role="main"">
-            @RenderBody()
-        </main>
-    </div>
 
-@*    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2023 - StartProject.Asp - <a asp-area="" asp-page="/Privacy">Privacy</a>
-        </div>
-    </footer>*@
+    <main role="main" class="container-fluid">
+        @RenderBody()
+    </main>
 
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
