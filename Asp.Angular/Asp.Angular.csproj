@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Razor" InitialTargets="BuildUI">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
+    <DefaultItemExcludes>src\**;node_modules\**</DefaultItemExcludes>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="tsconfig*.json" />
+    <Content Remove="package.json" />
+    <Content Remove="package-lock.json" />
+    <Content Remove="angular.json" />
+    <Content Remove="prettierrc.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <SupportedPlatform Include="browser" />
+  </ItemGroup>
+
+
+  <Target Name="BuildUI" BeforeTargets="Build" Condition="('$(Configuration)'!= 'Debug' or !Exists('wwwroot\main.js')) And ('$(NoBuild)' != 'true')">
+    <Exec WorkingDirectory="./" Command="npm install" />
+    <Exec WorkingDirectory="./" Command="npm run build  --configuration Asp.Angular --progress false" />
+  </Target>
+
+</Project>

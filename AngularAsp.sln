@@ -3,11 +3,18 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.3.32929.385
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.Web", "Asp.Web\Asp.Web.csproj", "{2D190CB5-371A-42FA-B42D-0E4187F60867}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.Api", "Asp.Api\Asp.Api.csproj", "{472DCBC2-09EE-4D3E-B708-062ED4E0078D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp", "Asp\Asp.csproj", "{31FF3C66-7617-431C-8694-3348921E429E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.React", "Asp.React\Asp.React.csproj", "{E554D922-DD30-488B-BF7C-9F216E955B8F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Asp.Api", "Asp.Api\Asp.Api.csproj", "{472DCBC2-09EE-4D3E-B708-062ED4E0078D}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{904E8BBA-FC59-4ACC-AD0F-116F5015F5E9}"
+	ProjectSection(SolutionItems) = preProject
+		Directory.build.targets = Directory.build.targets
+	EndProjectSection
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asp.Angular", "Asp.Angular\Asp.Angular.csproj", "{0DCC2174-ED68-44A0-B7E2-55BF14CDCF01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StartProject.Asp", "StartProject.Asp\StartProject.Asp.csproj", "{4B0F4295-70CB-4DE5-A504-340785CD13CE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +22,22 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{2D190CB5-371A-42FA-B42D-0E4187F60867}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{2D190CB5-371A-42FA-B42D-0E4187F60867}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{2D190CB5-371A-42FA-B42D-0E4187F60867}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{2D190CB5-371A-42FA-B42D-0E4187F60867}.Release|Any CPU.Build.0 = Release|Any CPU
-		{31FF3C66-7617-431C-8694-3348921E429E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{31FF3C66-7617-431C-8694-3348921E429E}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{31FF3C66-7617-431C-8694-3348921E429E}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{31FF3C66-7617-431C-8694-3348921E429E}.Release|Any CPU.Build.0 = Release|Any CPU
 		{472DCBC2-09EE-4D3E-B708-062ED4E0078D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{472DCBC2-09EE-4D3E-B708-062ED4E0078D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{472DCBC2-09EE-4D3E-B708-062ED4E0078D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{472DCBC2-09EE-4D3E-B708-062ED4E0078D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E554D922-DD30-488B-BF7C-9F216E955B8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E554D922-DD30-488B-BF7C-9F216E955B8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E554D922-DD30-488B-BF7C-9F216E955B8F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E554D922-DD30-488B-BF7C-9F216E955B8F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0DCC2174-ED68-44A0-B7E2-55BF14CDCF01}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0DCC2174-ED68-44A0-B7E2-55BF14CDCF01}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0DCC2174-ED68-44A0-B7E2-55BF14CDCF01}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0DCC2174-ED68-44A0-B7E2-55BF14CDCF01}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B0F4295-70CB-4DE5-A504-340785CD13CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B0F4295-70CB-4DE5-A504-340785CD13CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B0F4295-70CB-4DE5-A504-340785CD13CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B0F4295-70CB-4DE5-A504-340785CD13CE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

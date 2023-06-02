@@ -1,0 +1,22 @@
+html {
+    font-size: 14px !important;
+    font-family: Inter,system-ui,Avenir,Helvetica,Arial,sans-serif !important;
+    line-height: 1.5 !important;
+    font-weight: 400 !important;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.navbar {
+    height: 60px !important;
+    z-index: 1;
+}
